@@ -16,12 +16,21 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+#login-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: white;
+  color: #1a237e;
 }
 
 header h1 {
@@ -48,6 +57,14 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
+}
+
+.auth-panel {
+  max-width: 500px;
+}
+
+.auth-panel button {
+  margin-top: 4px;
 }
 
 section h3 {
@@ -162,6 +179,11 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
 }
 
 .message {
